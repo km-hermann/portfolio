@@ -79,6 +79,7 @@ export function ProjectsSection() {
               title={project.title}
               subtitle={project.subtitle}
               description={project.description}
+              image={project.image}
               features={project.techStack}
               liveUrl={project.liveUrl}
               githubUrl={project.githubUrl}

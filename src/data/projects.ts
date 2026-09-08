@@ -25,8 +25,7 @@ export const projects: Project[] = [
     description:
       "Production web application engineered with Next.js, featuring high-performance dynamic routing, deep violet-gold aesthetics, and responsive architecture.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma"],
-    image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=80",
+    image: "/projects/project-page237.png",
     liveUrl: "https://page237.vercel.app",
     githubUrl: "https://github.com/km-hermann/page237",
     status: "in-progress",
@@ -45,8 +44,7 @@ export const projects: Project[] = [
     description:
       "Real-time kitchen display and order dispatch system built with event-driven WebSockets, sub-second ticket sync, and role-based staff workflows.",
     techStack: ["React", "Node.js", "WebSockets", "Redis", "Tailwind CSS"],
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80",
+    image: "/projects/project-kitchen-system.png",
     liveUrl: "https://example.com/[PLACEHOLDER-KITCHEN-SYSTEM-URL]",
     githubUrl: "https://github.com/[PLACEHOLDER-USER]/[PLACEHOLDER-KITCHEN-REPO]",
     status: "live",
@@ -65,8 +63,7 @@ export const projects: Project[] = [
     description:
       "Multiplayer Tic Tac Toe Game built with React, TypeScript, and Tailwind CSS.",
     techStack: ["HTML5", "CSS3", "JavaScript"],
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80",
+    image: "/projects/project-tic-tac-toe.png",
     liveUrl: "https://kmh-tic-tac-toe.vercel.app",
     githubUrl: "https://github.com/km-hermann/Tic-Tac-Toe",
     status: "live",
@@ -83,8 +80,7 @@ export const projects: Project[] = [
     description:
       "Classic Snake Game built with HTML5, CSS3, and JavaScript.",
     techStack: ["HTML5", "CSS3", "JavaScript"],
-    image:
-      "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=800&auto=format&fit=crop&q=80",
+    image: "/projects/project-snake-game.png",
     liveUrl: "https://kmh-snake-game.vercel.app",
     githubUrl: "https://github.com/km-hermann/Snake-Game",
     status: "live",
@@ -101,8 +97,7 @@ export const projects: Project[] = [
     description:
         "Interactive Chatbot built with WebAudio API, Canvas, TypeScript, and Tailwind CSS.",
     techStack: ["HTML5", "CSS3", "JavaScript"],
-    image:
-      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&auto=format&fit=crop&q=80",
+    image: "/projects/project-chatup-bot.png",
     liveUrl: "https://chat-up-bot.vercel.app",
     githubUrl: "https://github.com/km-hermann/ChatUp-Bot",
     status: "live",
@@ -119,8 +114,7 @@ export const projects: Project[] = [
     description:
           "Portfolio Website built with HTML5, CSS3, and JavaScript.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    image:
-      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&auto=format&fit=crop&q=80",
+    image: "/projects/project-portfolio.png",
     liveUrl: "https://Hermann-Mea-Portfolio.vercel.app",
     githubUrl: "https://github.com/km-hermann/Portfolio",
     status: "live",
@@ -137,8 +131,7 @@ export const projects: Project[] = [
     description:
           "Simple Quiz Game built with HTML5, CSS3, and JavaScript.",
     techStack: ["HTML5", "CSS3", "JavaScript"],
-    image:
-      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&auto=format&fit=crop&q=80",
+    image: "/projects/project-simple-quiz-game.png",
     liveUrl: "https://kmh-simple-quiz.vercel.app",
     githubUrl: "https://github.com/km-hermann/Simple-Quiz",
     status: "live",
@@ -155,8 +148,7 @@ export const projects: Project[] = [
     description:
           "Simple Calculator built with HTML5, CSS3, and JavaScript.",
     techStack: ["HTML5", "CSS3", "JavaScript"],
-    image:
-      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&auto=format&fit=crop&q=80",
+    image: "/projects/project-simple-calculator.png",
     liveUrl: "https://kmh-simple-calculator.vercel.app",
     githubUrl: "https://github.com/km-hermann/Simple-Calculator",
     status: "live",

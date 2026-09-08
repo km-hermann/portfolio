@@ -32,6 +32,7 @@ export interface CardFlipProps {
   title?: string;
   subtitle?: string;
   description?: string;
+  image?: string;
   features?: string[];
   techStack?: string[];
   liveUrl?: string;
@@ -44,6 +45,7 @@ export default function CardFlip({
   title = "Design Systems",
   subtitle = "Explore the fundamentals",
   description = "Dive deep into the world of modern UI/UX design.",
+  image,
   features,
   techStack,
   liveUrl,
@@ -91,32 +93,48 @@ export default function CardFlip({
             "transition-all duration-500 flex flex-col justify-between"
           )}
         >
-          {/* Subtle Ambient Radial Glow */}
+          {/* Subtle Ambient Radial Glow / Project Image */}
           <div className="relative flex-1 overflow-hidden">
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 flex items-start justify-center pt-16"
-            >
-              <div className="relative flex h-[120px] w-[220px] items-center justify-center">
-                {[...Array(6)].map((_, i) => (
-                  <div
-                    className={cn(
-                      "absolute h-[70px] w-[70px]",
-                      "rounded-full",
-                      "animate-[goldPulse_3.5s_linear_infinite]",
-                      "motion-reduce:animate-none",
-                      "opacity-0",
-                      "shadow-[0_0_60px_rgba(197,160,89,0.35)]",
-                      "group-hover:animate-[goldPulse_2.2s_linear_infinite]"
-                    )}
-                    key={i}
-                    style={{
-                      animationDelay: `${i * 0.4}s`,
-                    }}
-                  />
-                ))}
+            {image ? (
+              <img
+                src={image}
+                alt={title}
+                className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
+              />
+            ) : (
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 flex items-start justify-center pt-16"
+              >
+                <div className="relative flex h-[120px] w-[220px] items-center justify-center">
+                  {[...Array(6)].map((_, i) => (
+                    <div
+                      className={cn(
+                        "absolute h-[70px] w-[70px]",
+                        "rounded-full",
+                        "animate-[goldPulse_3.5s_linear_infinite]",
+                        "motion-reduce:animate-none",
+                        "opacity-0",
+                        "shadow-[0_0_60px_rgba(197,160,89,0.35)]",
+                        "group-hover:animate-[goldPulse_2.2s_linear_infinite]"
+                      )}
+                      key={i}
+                      style={{
+                        animationDelay: `${i * 0.4}s`,
+                      }}
+                    />
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
+
+            {/* Gradient overlay for readability when image is present */}
+            {image && (
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"
+              />
+            )}
 
             {/* Status Indicator Chip */}
             <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
@@ -124,8 +142,8 @@ export default function CardFlip({
                 className={cn(
                   "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-medium tracking-wide uppercase",
                   status === "live"
-                    ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
-                    : "bg-amber-500/10 text-amber-400 border border-amber-500/20"
+                    ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 backdrop-blur-sm"
+                    : "bg-amber-500/10 text-amber-400 border border-amber-500/20 backdrop-blur-sm"
                 )}
               >
                 <span

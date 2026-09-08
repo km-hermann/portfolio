@@ -48,21 +48,21 @@ export function Footer() {
               <span className="font-mono text-indigo-400">/&gt;</span>
             </Link>
             <p className="text-xs text-zinc-400 font-light">
-              [PLACEHOLDER - Hermann Mea (KMH) • Software Engineer]
+              Hermann Mea (KMH) • Software Engineer
             </p>
           </div>
 
           {/* Social Links */}
           <div className="flex items-center gap-3">
             <a
-              href="mailto:kmh@example.com?subject=Contact%20from%20Portfolio"
+              href="mailto:hermannmea777@gmail.com.com?subject=Contact%20from%20Portfolio"
               aria-label="Send email"
               className="p-2.5 rounded-xl border border-white/10 bg-white/5 text-zinc-300 hover:text-amber-300 hover:border-amber-400/40 transition-colors"
             >
               <Mail className="h-4 w-4" />
             </a>
             <a
-              href="https://github.com/[PLACEHOLDER-USER]"
+              href="https://github.com/km-hermann"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
@@ -71,7 +71,7 @@ export function Footer() {
               <GitHubIcon className="h-4 w-4" />
             </a>
             <a
-              href="https://linkedin.com/in/[PLACEHOLDER-USER]"
+              href="https://linkedin.com/in/hermann-mea"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"

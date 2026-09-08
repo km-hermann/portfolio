@@ -20,16 +20,16 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "project-page237",
-    title: "[PLACEHOLDER - Page237 Web Platform]",
-    subtitle: "[PLACEHOLDER - Digital Ecosystem & Community Portal]",
+    title: "Page237 Web Platform",
+    subtitle: "Digital Ecosystem & Community Portal",
     description:
-      "[PLACEHOLDER - Production web application engineered with Next.js, featuring high-performance dynamic routing, deep violet-gold aesthetics, and responsive architecture.]",
+      "Production web application engineered with Next.js, featuring high-performance dynamic routing, deep violet-gold aesthetics, and responsive architecture.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma"],
     image:
       "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=80",
-    liveUrl: "https://example.com/[PLACEHOLDER-PAGE237-URL]",
-    githubUrl: "https://github.com/[PLACEHOLDER-USER]/[PLACEHOLDER-PAGE237-REPO]",
-    status: "live",
+    liveUrl: "https://page237.vercel.app",
+    githubUrl: "https://github.com/km-hermann/page237",
+    status: "in-progress",
     featured: true,
     specs: [
       { label: "Architecture", value: "SSR / ISR" },
@@ -40,10 +40,10 @@ export const projects: Project[] = [
   },
   {
     id: "project-kitchen-system",
-    title: "[PLACEHOLDER - Real-Time Kitchen & Order System]",
-    subtitle: "[PLACEHOLDER - Distributed Restaurant Operations Hub]",
+    title: "DineLink",
+    subtitle: "Distributed Restaurant Operations Hub",
     description:
-      "[PLACEHOLDER - Real-time kitchen display and order dispatch system built with event-driven WebSockets, sub-second ticket sync, and role-based staff workflows.]",
+      "Real-time kitchen display and order dispatch system built with event-driven WebSockets, sub-second ticket sync, and role-based staff workflows.",
     techStack: ["React", "Node.js", "WebSockets", "Redis", "Tailwind CSS"],
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80",
@@ -59,63 +59,111 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "project-saas-dashboard",
-    title: "[PLACEHOLDER - Analytics & Telemetry Engine]",
-    subtitle: "[PLACEHOLDER - High-Throughput Metrics Dashboard]",
+    id: "project-tic-tac-toe",
+    title: "Tic Tac Toe",
+    subtitle: "Multiplayer Tic Tac Toe Game",
     description:
-      "[PLACEHOLDER - Scalable analytics dashboard delivering streaming data visualization, fine-grained access control, and automated report generation.]",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Go", "ClickHouse"],
+      "Multiplayer Tic Tac Toe Game built with React, TypeScript, and Tailwind CSS.",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80",
-    liveUrl: "https://example.com/[PLACEHOLDER-DASHBOARD-URL]",
-    githubUrl: "https://github.com/[PLACEHOLDER-USER]/[PLACEHOLDER-DASHBOARD-REPO]",
-    status: "in-progress",
+    liveUrl: "https://kmh-tic-tac-toe.vercel.app",
+    githubUrl: "https://github.com/km-hermann/Tic-Tac-Toe",
+    status: "live",
     featured: true,
     specs: [
-      { label: "Throughput", value: "Real-time" },
-      { label: "Type", value: "Analytics" },
-      { label: "Security", value: "OAuth2 / RBAC" },
-      { label: "Engine", value: "Go Core" },
+      { label: "Type", value: "HTML5" },
+      { label: "Language", value: "JavaScript" },
     ],
   },
   {
-    id: "project-developer-cli",
-    title: "[PLACEHOLDER - Developer CLI & Automation Tool]",
-    subtitle: "[PLACEHOLDER - Systems Workflow Automator]",
+    id: "project-snake-game",
+    title: "Snake Game",
+    subtitle: "Classic Snake Game",
     description:
-      "[PLACEHOLDER - Command-line interface and local developer tooling designed to automate build orchestration, container deployment, and document conversion pipelines.]",
-    techStack: ["TypeScript", "Node.js", "Pandoc", "Docker", "Shell"],
+      "Classic Snake Game built with HTML5, CSS3, and JavaScript.",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
     image:
       "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=800&auto=format&fit=crop&q=80",
-    liveUrl: "https://example.com/[PLACEHOLDER-CLI-URL]",
-    githubUrl: "https://github.com/[PLACEHOLDER-USER]/[PLACEHOLDER-CLI-REPO]",
+    liveUrl: "https://kmh-snake-game.vercel.app",
+    githubUrl: "https://github.com/km-hermann/Snake-Game",
     status: "live",
     featured: false,
     specs: [
-      { label: "Interface", value: "Terminal CLI" },
-      { label: "Runtime", value: "Node / TS" },
-      { label: "Pipeline", value: "Pandoc / Sh" },
-      { label: "License", value: "MIT" },
+      { label: "Type", value: "HTML5" },
+      { label: "Language", value: "JavaScript" },
     ],
   },
   {
-    id: "project-audio-suite",
-    title: "[PLACEHOLDER - Interactive Audio Synthesis Suite]",
-    subtitle: "[PLACEHOLDER - WebAudio Exploration & Tuning]",
+    id: "project-chatup-bot",
+    title: "ChatUp Bot",
+    subtitle: "Interactive Chatbot",
     description:
-      "[PLACEHOLDER - WebAudio API experiments featuring interactive frequency synthesis, harmonic waveform visualization, and real-time audio filters.]",
-    techStack: ["WebAudio API", "Canvas", "TypeScript", "Tailwind CSS"],
+        "Interactive Chatbot built with WebAudio API, Canvas, TypeScript, and Tailwind CSS.",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
     image:
       "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&auto=format&fit=crop&q=80",
-    liveUrl: "https://example.com/[PLACEHOLDER-AUDIO-URL]",
-    githubUrl: "https://github.com/[PLACEHOLDER-USER]/[PLACEHOLDER-AUDIO-REPO]",
-    status: "in-progress",
+    liveUrl: "https://chat-up-bot.vercel.app",
+    githubUrl: "https://github.com/km-hermann/ChatUp-Bot",
+    status: "live",
     featured: false,
     specs: [
-      { label: "Engine", value: "Web Audio" },
-      { label: "Rendering", value: "HTML5 Canvas" },
-      { label: "Precision", value: "64-bit Audio" },
-      { label: "Mode", value: "Synthesizer" },
+      { label: "Type", value: "HTML5" },
+      { label: "Language", value: "JavaScript" },
+    ],
+  },
+  {
+    id: "project-portfolio",
+    title: "Portfolio",
+    subtitle: "Portfolio Website",
+    description:
+          "Portfolio Website built with HTML5, CSS3, and JavaScript.",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    image:
+      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&auto=format&fit=crop&q=80",
+    liveUrl: "https://Hermann-Mea-Portfolio.vercel.app",
+    githubUrl: "https://github.com/km-hermann/Portfolio",
+    status: "live",
+    featured: false,
+    specs: [
+      { label: "Type", value: "Next.js" },
+      { label: "Language", value: "TypeScript" },
+    ],
+  },
+  {
+    id: "project-simple-quiz-game",
+    title: "Simple Quiz Game",
+    subtitle: "Simple Quiz Game",
+    description:
+          "Simple Quiz Game built with HTML5, CSS3, and JavaScript.",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
+    image:
+      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&auto=format&fit=crop&q=80",
+    liveUrl: "https://kmh-simple-quiz.vercel.app",
+    githubUrl: "https://github.com/km-hermann/Simple-Quiz",
+    status: "live",
+    featured: false,
+    specs: [
+      { label: "Type", value: "HTML5" },
+      { label: "Language", value: "JavaScript" },
+    ],
+  },
+  {
+    id: "project-simple-calculator",
+    title: "Simple Calculator",
+    subtitle: "Simple Calculator",
+    description:
+          "Simple Calculator built with HTML5, CSS3, and JavaScript.",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
+    image:
+      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&auto=format&fit=crop&q=80",
+    liveUrl: "https://kmh-simple-calculator.vercel.app",
+    githubUrl: "https://github.com/km-hermann/Simple-Calculator",
+    status: "live",
+    featured: false,
+    specs: [
+      { label: "Type", value: "HTML5" },
+      { label: "Language", value: "JavaScript" },
     ],
   },
 ];

@@ -91,7 +91,7 @@ export function ProjectsSection() {
         <div className="mt-12 text-center">
           <p className="text-xs text-zinc-500 font-mono inline-flex items-center gap-1.5">
             <Sparkles className="h-3.5 w-3.5 text-amber-400/80" />
-            <span>Adding new projects is a pure data update in <code className="text-indigo-300 bg-white/5 px-1 py-0.5 rounded">src/data/projects.ts</code></span>
+            <span>Projects added continuously</span>
           </p>
         </div>
       </div>

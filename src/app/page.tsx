@@ -35,9 +35,9 @@ export default function Home() {
         {/* 1. HERO SECTION */}
         <section id="hero" aria-label="Introduction">
           <ShapeHero
-            title1="[PLACEHOLDER - Hermann Mea (KMH)]"
-            title2="[PLACEHOLDER - Software Engineer & Systems Builder]"
-            subtitle="[PLACEHOLDER - Architecting scalable web systems, event-driven backends, and bespoke digital experiences. Focused on predictable state, performance, and clean design.]"
+            title1="Hermann Mea"
+            title2="Software Engineer & Systems Builder"
+            subtitle="Architecting scalable web systems, event-driven backends, and bespoke digital experiences. Focused on predictable state, performance, and clean design."
           >
             <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
               <a
@@ -147,16 +147,16 @@ export default function Home() {
               {/* Interactive MouseEffectCard */}
               <MouseEffectCard
                 title="Let's work together"
-                subtitle="[PLACEHOLDER - Open for software engineering roles, high-throughput web system builds, and technical collaborations.]"
+                subtitle="Open for software engineering roles, high-throughput web system builds, and technical collaborations."
                 topText="Status: Available"
                 topSubtext="Full-Time & Project Engagements"
                 primaryCtaText="Send an Email"
-                primaryCtaUrl="mailto:kmh@example.com?subject=Project%20Inquiry%20from%20Portfolio"
+                primaryCtaUrl="mailto:hermannmea777@gmail.com?subject=Project%20Inquiry%20from%20Portfolio"
                 secondaryCtaText="GitHub Profile"
-                secondaryCtaUrl="https://github.com/[PLACEHOLDER-USER]"
+                secondaryCtaUrl="https://github.com/km-hermann"
                 tertiaryCtaText="LinkedIn"
-                tertiaryCtaUrl="https://linkedin.com/in/[PLACEHOLDER-USER]"
-                footerText="Designed & Built by Hermann Mea (KMH) • Next.js & Kokonut UI"
+                tertiaryCtaUrl="https://linkedin.com/in/hermann-mea"
+                footerText="Designed & Built by Hermann Mea (KMH)"
               />
 
               {/* LiquidGlassCard for Direct Info */}
@@ -174,10 +174,10 @@ export default function Home() {
                         Email Address
                       </span>
                       <a
-                        href="mailto:kmh@example.com"
+                        href="mailto:hermannmea777@gmail.com"
                         className="text-xs font-medium text-white hover:text-amber-400 transition-colors"
                       >
-                        [PLACEHOLDER: kmh@example.com]
+                        hermannmea777@gmail.com
                       </a>
                     </div>
                   </div>
@@ -191,7 +191,7 @@ export default function Home() {
                         Location & Time
                       </span>
                       <span className="text-xs font-medium text-white">
-                        [PLACEHOLDER: Remote / GMT+1]
+                        Yde Cameroon / GMT+1
                       </span>
                     </div>
                   </div>

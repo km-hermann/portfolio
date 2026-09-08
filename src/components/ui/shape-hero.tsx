@@ -92,9 +92,9 @@ function ElegantShape({
 }
 
 export default function ShapeHero({
-  title1 = "[PLACEHOLDER - Hermann Mea (KMH)]",
-  title2 = "[PLACEHOLDER - Software Engineer & Systems Builder]",
-  subtitle = "[PLACEHOLDER - Architecting scalable web systems, event-driven backends, and bespoke digital experiences.]",
+  title1 = "Hermann Mea (KMH)",
+  title2 = "Software Engineer & Systems Builder",
+  subtitle = "Architecting scalable web systems, event-driven backends, and bespoke digital experiences.",
   children,
 }: {
   title1?: string;

@@ -20,9 +20,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "[PLACEHOLDER - Hermann Mea (KMH)] • Software Engineer",
+  title: "Hermann Mea (KMH) • Software Engineer",
   description:
-    "[PLACEHOLDER - Portfolio of Hermann Mea (KMH) - Software Engineer building resilient full-stack systems, modern web platforms, and real-time event-driven architectures.]",
+    "Portfolio of Hermann Mea (KMH) - Software Engineer building resilient full-stack systems, modern web platforms, and real-time event-driven architectures.",
   keywords: [
     "Software Engineer",
     "Full Stack Developer",

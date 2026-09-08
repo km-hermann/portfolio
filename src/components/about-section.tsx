@@ -39,23 +39,23 @@ export function AboutSection() {
             {/* Bio Paragraphs */}
             <div className="space-y-5 text-zinc-300 font-light text-base leading-relaxed">
               <p>
-                [PLACEHOLDER - I am a software developer with a focus on engineering resilient full-stack systems,
+                I am a software developer with a focus on engineering resilient full-stack systems,
                 high-performance web applications, and intuitive user experiences. I approach software development as
                 both a rigorous science and a design craft: prioritizing predictable state management, performant runtime
-                execution, and architectural clarity from day one.]
+                execution, and architectural clarity from day one.
               </p>
 
               <p>
-                [PLACEHOLDER - Currently progressing through my Software Engineering degree and building real-world
+                Currently progressing through my Software Engineering degree and building real-world
                 production software (including distributed order and kitchen management workflows, real-time ticket sync,
-                and high-throughput platforms like Page237). My hands-on industry experience has ingrained the importance
-                of fault-tolerant APIs, edge-ready rendering, and automated developer tooling.]
+                and high-throughput platforms like Page237, mini games like Snake-Game, Tic-Tac-Toe). My hands-on industry experience has ingrained the importance
+                of fault-tolerant APIs, edge-ready rendering, and automated developer tooling.
               </p>
 
               <p>
-                [PLACEHOLDER - Beyond code, my discipline is shaped by musicianship (playing piano, bass guitar, and solo strings)
+                Beyond code, my discipline is shaped by musicianship (playing piano, bass guitar, and solo strings)
                 and continuous technical exploration. I believe that mastering timing, structural harmony, and composition in music
-                mirrors crafting modular, maintainable, and elegant software systems.]
+                mirrors crafting modular, maintainable, and elegant software systems.
               </p>
             </div>
 
@@ -67,7 +67,7 @@ export function AboutSection() {
                   <span>Production Mindset</span>
                 </div>
                 <p className="text-xs text-zinc-400 font-light leading-relaxed">
-                  [PLACEHOLDER - Focused on zero-downtime reliability, clean typing, and high testability.]
+                  Focused on zero-downtime reliability, clean typing, and high testability.
                 </p>
               </div>
 
@@ -77,7 +77,7 @@ export function AboutSection() {
                   <span>Tooling & Automation</span>
                 </div>
                 <p className="text-xs text-zinc-400 font-light leading-relaxed">
-                  [PLACEHOLDER - CI/CD orchestration, document transformations with Pandoc, and containerized workflows.]
+                  CI/CD orchestration, document transformations with Pandoc, and containerized workflows.
                 </p>
               </div>
 
@@ -87,7 +87,7 @@ export function AboutSection() {
                   <span>Continuous Velocity</span>
                 </div>
                 <p className="text-xs text-zinc-400 font-light leading-relaxed">
-                  [PLACEHOLDER - Rapidly transforming complex business specifications into shipping solutions.]
+                  Rapidly transforming complex business specifications into shipping solutions.
                 </p>
               </div>
             </div>

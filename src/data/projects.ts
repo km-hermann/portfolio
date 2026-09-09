@@ -44,7 +44,7 @@ export const projects: Project[] = [
     description:
       "Real-time kitchen display and order dispatch system built with event-driven WebSockets, sub-second ticket sync, and role-based staff workflows.",
     techStack: ["React", "Node.js", "WebSockets", "Redis", "Tailwind CSS"],
-    image: "/projects/project-kitchen-system.png",
+    image: "/projects/project-dinelink.png",
     liveUrl: "https://example.com/[PLACEHOLDER-KITCHEN-SYSTEM-URL]",
     githubUrl: "https://github.com/[PLACEHOLDER-USER]/[PLACEHOLDER-KITCHEN-REPO]",
     status: "live",
@@ -109,12 +109,12 @@ export const projects: Project[] = [
   },
   {
     id: "project-portfolio",
-    title: "Portfolio",
-    subtitle: "Portfolio Website",
+    title: "My Portfolio",
+    subtitle: "My Portfolio Website",
     description:
           "Portfolio Website built with HTML5, CSS3, and JavaScript.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    image: "/projects/project-portfolio.png",
+    image: "/projects/project-my-portfolio.png",
     liveUrl: "https://Hermann-Mea-Portfolio.vercel.app",
     githubUrl: "https://github.com/km-hermann/Portfolio",
     status: "live",

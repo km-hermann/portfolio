@@ -99,7 +99,10 @@ export default function CardFlip({
               <img
                 src={image}
                 alt={title}
-                className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
+                className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+                style={{ imageRendering: "auto" }}
+                loading="lazy"
+                decoding="async"
               />
             ) : (
               <div
@@ -128,11 +131,11 @@ export default function CardFlip({
               </div>
             )}
 
-            {/* Gradient overlay for readability when image is present */}
+            {/* Subtle bottom gradient for text readability — kept light so image stays crisp */}
             {image && (
               <div
                 aria-hidden="true"
-                className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"
+                className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-slate-950/80 to-transparent"
               />
             )}
 

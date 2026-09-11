@@ -28,8 +28,8 @@ interface Product {
   specs: Specification[];
 }
 
-const CARD_WIDTH = 340;
-const CARD_OVERLAP = 220;
+const CARD_WIDTH = 306;
+const CARD_OVERLAP = 198;
 
 interface CardProps {
   product: Product;
@@ -82,7 +82,7 @@ const Card = ({
         zIndex: totalCards - index,
       }}
       className={cn(
-        "absolute inset-0 w-full rounded-2xl p-6 text-left",
+        "absolute inset-0 w-full rounded-2xl p-5 text-left",
         "bg-slate-900/90 dark:bg-[#0b0a1a]/95",
         "border border-indigo-500/30 hover:border-amber-500/50",
         "backdrop-blur-xl",
@@ -111,7 +111,7 @@ const Card = ({
     >
       <div className="relative z-10 flex flex-col h-full justify-between">
         <div>
-          <dl className="mb-3 grid grid-cols-4 justify-center gap-2 border-b border-white/10 pb-3">
+          <dl className="mb-2.5 grid grid-cols-4 justify-center gap-2 border-b border-white/10 pb-2.5">
             {product.specs.slice(0, 4).map((spec) => (
               <div
                 className="flex flex-col items-start text-left text-[10px]"
@@ -139,23 +139,23 @@ const Card = ({
               alt={product.title}
               className="object-cover"
               fill
-              sizes="340px"
+              sizes="306px"
               src={product.image}
               unoptimized={isSvg}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           </div>
 
-          <div className="mt-3">
+          <div className="mt-2.5">
             <div className="space-y-0.5">
-              <span className="block text-left font-bold text-lg text-white tracking-tight">
+              <span className="block text-left font-bold text-base text-white tracking-tight">
                 {product.title}
               </span>
               <span className="block text-left font-medium text-xs text-indigo-300">
                 {product.subtitle}
               </span>
             </div>
-            <p className="mt-2 text-left text-zinc-400 text-xs line-clamp-2 leading-relaxed">
+            <p className="mt-1.5 text-left text-zinc-400 text-xs line-clamp-2 leading-relaxed">
               {product.description}
             </p>
           </div>
@@ -213,8 +213,8 @@ export default function CardStack({ items, className }: CardStackProps) {
         aria-label={isExpanded ? "Collapse card stack" : "Expand card stack"}
         className={cn(
           "relative mx-auto cursor-pointer",
-          "min-h-[460px] w-full max-w-[90vw]",
-          "md:max-w-[1200px]",
+          "min-h-[415px] w-full max-w-[90vw]",
+          "md:max-w-[1080px]",
           "appearance-none border-0 bg-transparent p-0",
           "flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/50 rounded-2xl",
           className

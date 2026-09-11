@@ -59,7 +59,7 @@ export default function CardFlip({
   return (
     <div
       className={cn(
-        "group relative h-[360px] w-full [perspective:2000px] select-none",
+        "group relative h-[324px] w-full [perspective:2000px] select-none",
         className
       )}
       onMouseEnter={() => setIsFlipped(true)}
@@ -161,10 +161,10 @@ export default function CardFlip({
           </div>
 
           {/* Front Content Footer */}
-          <div className="p-6 relative z-10 border-t border-white/5 bg-slate-950/60 backdrop-blur-sm">
+          <div className="p-4 sm:p-5 relative z-10 border-t border-white/5 bg-slate-950/60 backdrop-blur-sm">
             <div className="flex items-center justify-between gap-3">
-              <div className="space-y-1">
-                <h3 className="font-semibold text-lg text-white leading-snug tracking-tight transition-transform duration-500 ease-out group-hover:translate-y-[-2px]">
+              <div className="space-y-0.5">
+                <h3 className="font-semibold text-base text-white leading-snug tracking-tight transition-transform duration-500 ease-out group-hover:translate-y-[-2px]">
                   {title}
                 </h3>
                 <p className="line-clamp-1 text-xs text-zinc-400 tracking-normal transition-transform delay-[50ms] duration-500 ease-out group-hover:translate-y-[-2px]">
@@ -179,10 +179,10 @@ export default function CardFlip({
                     "bg-gradient-to-br from-amber-500/20 via-violet-500/20 to-transparent opacity-60 group-hover:opacity-100"
                   )}
                 />
-                <div className="relative z-10 h-8 w-8 rounded-lg bg-indigo-950/70 border border-amber-500/30 flex items-center justify-center">
+                <div className="relative z-10 h-7.5 w-7.5 rounded-lg bg-indigo-950/70 border border-amber-500/30 flex items-center justify-center">
                   <Repeat2
                     aria-hidden="true"
-                    className="h-4 w-4 text-amber-400 transition-transform duration-300 group-hover/icon:-rotate-12 group-hover/icon:scale-110"
+                    className="h-3.5 w-3.5 text-amber-400 transition-transform duration-300 group-hover/icon:-rotate-12 group-hover/icon:scale-110"
                   />
                 </div>
               </div>
@@ -195,27 +195,27 @@ export default function CardFlip({
           className={cn(
             "absolute inset-0 h-full w-full",
             "[backface-visibility:hidden] [transform:rotateY(180deg)]",
-            "rounded-2xl p-6",
+            "rounded-2xl p-5",
             "bg-gradient-to-b from-[#0a0a16] via-slate-950 to-black",
             "border border-amber-500/30",
             "shadow-xl flex flex-col justify-between"
           )}
         >
-          <div className="space-y-4">
-            <div className="space-y-1.5">
+          <div className="space-y-3">
+            <div className="space-y-1">
               <span className="text-[10px] uppercase font-bold tracking-widest text-amber-400/90">
                 Project Overview
               </span>
-              <h3 className="font-semibold text-lg text-white leading-snug tracking-tight">
+              <h3 className="font-semibold text-base text-white leading-snug tracking-tight">
                 {title}
               </h3>
-              <p className="line-clamp-4 text-xs text-zinc-300/90 leading-relaxed font-light">
+              <p className="line-clamp-3 text-xs text-zinc-300/90 leading-relaxed font-light">
                 {description}
               </p>
             </div>
 
             {/* Tech Stack Tags */}
-            <div className="space-y-1.5">
+            <div className="space-y-1">
               <span className="text-[10px] uppercase font-semibold tracking-wider text-zinc-500">
                 Stack & Technologies
               </span>
@@ -223,7 +223,7 @@ export default function CardFlip({
                 {tags.slice(0, 5).map((tech) => (
                   <span
                     key={tech}
-                    className="px-2 py-0.5 rounded-md text-[11px] font-mono text-indigo-300 bg-indigo-950/60 border border-indigo-500/30"
+                    className="px-2 py-0.5 rounded-md text-[10.5px] font-mono text-indigo-300 bg-indigo-950/60 border border-indigo-500/30"
                   >
                     {tech}
                   </span>
@@ -233,7 +233,7 @@ export default function CardFlip({
           </div>
 
           {/* Action Links */}
-          <div className="pt-4 border-t border-white/10 flex items-center gap-2">
+          <div className="pt-3 border-t border-white/10 flex items-center gap-2">
             {liveUrl ? (
               <a
                 href={liveUrl}
@@ -241,7 +241,7 @@ export default function CardFlip({
                 rel="noopener noreferrer"
                 className={cn(
                   "group/btn relative flex-1 flex items-center justify-between",
-                  "rounded-xl px-4 py-2.5 text-xs font-semibold",
+                  "rounded-xl px-3.5 py-2 text-xs font-semibold",
                   "bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950",
                   "hover:from-amber-400 hover:to-amber-500 transition-all duration-300 shadow-sm hover:shadow-md",
                   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
@@ -262,7 +262,7 @@ export default function CardFlip({
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`View ${title} source on GitHub`}
-                className="p-2.5 rounded-xl border border-white/10 bg-white/5 text-zinc-300 hover:text-white hover:border-white/20 transition-colors"
+                className="p-2 rounded-xl border border-white/10 bg-white/5 text-zinc-300 hover:text-white hover:border-white/20 transition-colors"
               >
                 <GitHubIcon className="h-4 w-4" />
               </a>

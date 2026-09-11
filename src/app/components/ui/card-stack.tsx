@@ -28,8 +28,8 @@ interface Product {
   specs: Specification[];
 }
 
-const CARD_WIDTH = 340;
-const CARD_OVERLAP = 220;
+const CARD_WIDTH = 306;
+const CARD_OVERLAP = 198;
 
 interface CardProps {
   product: Product;

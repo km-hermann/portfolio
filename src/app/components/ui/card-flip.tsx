@@ -57,7 +57,7 @@ export default function CardFlip({
   return (
     <div
       className={cn(
-        "group relative h-[360px] w-full [perspective:2000px] select-none",
+        "group relative h-[324px] w-full [perspective:2000px] select-none",
         className
       )}
       onMouseEnter={() => setIsFlipped(true)}

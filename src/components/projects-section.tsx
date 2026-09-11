@@ -15,7 +15,7 @@ export function ProjectsSection() {
 
   return (
     <section id="projects" className="py-20 relative" aria-labelledby="projects-heading">
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <div className="space-y-2">
@@ -71,7 +71,7 @@ export function ProjectsSection() {
         </div>
 
         {/* Responsive Grid mapping CardFlip over projects */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {displayedProjects.map((project) => (
             <CardFlip
               key={project.id}

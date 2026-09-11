@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Download, FileText, Menu, X } from "lucide-react";
 import { LiquidButton } from "@/components/ui/liquid-glass-card";
 import { cn } from "@/lib/utils";
@@ -39,19 +40,31 @@ export function Navbar() {
         {/* Brand Logo */}
         <Link
           href="/"
-          className="group flex items-center gap-2 text-white font-bold tracking-tight text-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded-lg px-1"
+          className="group flex items-center gap-3 text-white font-bold tracking-tight text-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded-lg px-1 py-0.5"
           aria-label="KMH Portfolio Home"
         >
-          <span className="font-mono text-amber-400 text-lg transition-transform duration-300 group-hover:-rotate-12">
-            &lt;
-          </span>
-          <span className="bg-gradient-to-r from-white via-zinc-200 to-amber-200 bg-clip-text text-transparent">
-            KMH
-          </span>
-          <span className="font-mono text-indigo-400 text-lg transition-transform duration-300 group-hover:rotate-12">
-            /&gt;
-          </span>
-          <span className="h-1.5 w-1.5 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(197,160,89,0.8)]" />
+          <div className="relative h-9 w-9 sm:h-10 sm:w-10 rounded-full overflow-hidden border-2 border-amber-400/50 shadow-md shadow-amber-500/20 ring-2 ring-indigo-500/30 group-hover:border-amber-300 group-hover:ring-amber-400/40 group-hover:scale-105 transition-all duration-300 shrink-0 bg-slate-900">
+            <Image
+              src="/page237.jpg"
+              alt="Hermann Mea (KMH)"
+              width={40}
+              height={40}
+              className="h-full w-full object-cover object-top"
+              priority
+            />
+          </div>
+          <div className="flex items-center gap-1.5">
+            <span className="font-mono text-amber-400 text-lg transition-transform duration-300 group-hover:-rotate-12">
+              &lt;
+            </span>
+            <span className="bg-linear-to-r from-white via-zinc-200 to-amber-200 bg-clip-text text-transparent">
+              KMH
+            </span>
+            <span className="font-mono text-indigo-400 text-lg transition-transform duration-300 group-hover:rotate-12">
+              /&gt;
+            </span>
+            <span className="h-1.5 w-1.5 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(197,160,89,0.8)]" />
+          </div>
         </Link>
 
         {/* Desktop Navigation */}

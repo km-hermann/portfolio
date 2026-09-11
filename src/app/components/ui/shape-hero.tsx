@@ -218,14 +218,13 @@ export default function ShapeHero({
             initial="hidden"
             variants={fadeUpVariants}
           >
-            <h1 className="mb-6 font-bold text-4xl tracking-tight sm:text-6xl md:mb-8 md:text-8xl">
-              <span className="bg-linear-to-b from-white via-white/90 to-white/70 bg-clip-text text-transparent">
+            <h1 className="mb-8 flex flex-col items-center justify-center tracking-tight">
+              <span className="block font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl bg-linear-to-b from-white via-white/90 to-white/70 bg-clip-text text-transparent leading-none">
                 {title1}
               </span>
-              <br />
               <span
                 className={cn(
-                  "bg-linear-to-r from-indigo-300 via-violet-200 to-amber-300 bg-clip-text text-transparent drop-shadow-[0_2px_18px_rgba(197,160,89,0.25)]",
+                  "mt-4 sm:mt-6 md:mt-8 block bg-linear-to-r from-indigo-300 via-violet-200 to-amber-300 bg-clip-text text-transparent drop-shadow-[0_2px_18px_rgba(197,160,89,0.25)] pb-2 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-normal leading-snug",
                   pacifico.className
                 )}
               >

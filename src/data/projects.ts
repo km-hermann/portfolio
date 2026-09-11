@@ -19,6 +19,23 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "project-tic-tac-toe",
+    title: "Tic Tac Toe",
+    subtitle: "Multiplayer Tic Tac Toe Game",
+    description:
+      "Multiplayer Tic Tac Toe Game built with React, TypeScript, and Tailwind CSS.",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
+    image: "/projects/project-tic-tac-toe.png",
+    liveUrl: "https://kmh-tic-tac-toe.vercel.app",
+    githubUrl: "https://github.com/km-hermann/Tic-Tac-Toe",
+    status: "live",
+    featured: true,
+    specs: [
+      { label: "Type", value: "HTML5" },
+      { label: "Language", value: "JavaScript" },
+    ],
+  },
+  {
     id: "project-page237",
     title: "Page237 Web Platform",
     subtitle: "Digital Ecosystem & Community Portal",
@@ -54,23 +71,6 @@ export const projects: Project[] = [
       { label: "Protocol", value: "WebSockets" },
       { label: "State", value: "Redis Cache" },
       { label: "Clients", value: "Kitchen POS" },
-    ],
-  },
-  {
-    id: "project-tic-tac-toe",
-    title: "Tic Tac Toe",
-    subtitle: "Multiplayer Tic Tac Toe Game",
-    description:
-      "Multiplayer Tic Tac Toe Game built with React, TypeScript, and Tailwind CSS.",
-    techStack: ["HTML5", "CSS3", "JavaScript"],
-    image: "/projects/project-tic-tac-toe.png",
-    liveUrl: "https://kmh-tic-tac-toe.vercel.app",
-    githubUrl: "https://github.com/km-hermann/Tic-Tac-Toe",
-    status: "live",
-    featured: true,
-    specs: [
-      { label: "Type", value: "HTML5" },
-      { label: "Language", value: "JavaScript" },
     ],
   },
   {

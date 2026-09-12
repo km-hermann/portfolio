@@ -158,4 +158,21 @@ export const projects: Project[] = [
       { label: "Language", value: "JavaScript" },
     ],
   },
+  {
+    id: "project-genesis-translator",
+    title: "Genesis Translator",
+    subtitle: "Genesis Translator",
+    description:
+          "Genesis Translator built with HTML5, CSS3, and JavaScript with an API for smart translation of text.",
+    techStack: ["HTML5", "CSS3", "JavaScript"],
+    image: "/projects/project-genesis-translator.png",
+    liveUrl: "https://genesis-translator.vercel.app",
+    githubUrl: "https://github.com/km-hermann/Translator",
+    status: "live",
+    featured: false,
+    specs: [
+      { label: "Type", value: "HTML5" },
+      { label: "Language", value: "JavaScript" },
+    ],
+  },
 ];

@@ -100,7 +100,7 @@ export const projects: Project[] = [
     image: "/projects/project-chatup-bot.png",
     liveUrl: "https://chat-up-bot.vercel.app",
     githubUrl: "https://github.com/km-hermann/ChatUp-Bot",
-    status: "live",
+    status: "in-progress",
     featured: false,
     specs: [
       { label: "Type", value: "HTML5" },
@@ -168,7 +168,7 @@ export const projects: Project[] = [
     image: "/projects/project-genesis-translator.png",
     liveUrl: "https://genesis-translator.vercel.app",
     githubUrl: "https://github.com/km-hermann/Translator",
-    status: "live",
+    status: "in-progress",
     featured: false,
     specs: [
       { label: "Type", value: "HTML5" },

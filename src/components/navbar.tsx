@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Download, FileText, Menu, X } from "lucide-react";
@@ -18,6 +18,8 @@ const NAV_LINKS = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [heroPhotoVisible, setHeroPhotoVisible] = useState(true);
+  const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +27,22 @@ export function Navbar() {
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Watch for the hero photo [data-hero-photo] leaving/entering the viewport
+  useEffect(() => {
+    const heroPhoto = document.querySelector("[data-hero-photo]");
+    if (!heroPhoto) return;
+
+    observerRef.current = new IntersectionObserver(
+      ([entry]) => {
+        setHeroPhotoVisible(entry.isIntersecting);
+      },
+      { threshold: 0.3 }
+    );
+
+    observerRef.current.observe(heroPhoto);
+    return () => observerRef.current?.disconnect();
   }, []);
 
   return (
@@ -43,15 +61,27 @@ export function Navbar() {
           className="group flex items-center gap-3 text-white font-bold tracking-tight text-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded-lg px-1 py-0.5"
           aria-label="KMH Portfolio Home"
         >
-          <div className="relative h-11 w-11 sm:h-13 sm:w-13 md:h-14 md:w-14 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-lg shadow-amber-500/20 ring-2 ring-indigo-500/40 group-hover:border-amber-300 group-hover:ring-amber-400/50 group-hover:scale-105 transition-all duration-300 shrink-0 bg-slate-900">
-            <Image
-              src="/page237.jpg"
-              alt="Hermann Mea (KMH)"
-              width={64}
-              height={64}
-              className="h-full w-full object-cover object-top"
-              priority
-            />
+          {/* Navbar Avatar — hidden while hero photo is on-screen, slides in when hero photo scrolls away */}
+          <div
+            className={cn(
+              "relative rounded-full overflow-hidden border-2 border-amber-400/60 shadow-lg shadow-amber-500/20 ring-2 ring-indigo-500/40 group-hover:border-amber-300 group-hover:ring-amber-400/50 group-hover:scale-105 shrink-0 bg-slate-900",
+              "transition-all duration-500 ease-out",
+              heroPhotoVisible
+                ? "h-0 w-0 opacity-0 scale-75 border-0 ring-0 shadow-none"
+                : "h-11 w-11 sm:h-13 sm:w-13 md:h-14 md:w-14 opacity-100 scale-100"
+            )}
+            aria-hidden={heroPhotoVisible}
+          >
+            {!heroPhotoVisible && (
+              <Image
+                src="/profile.jpg"
+                alt="Hermann Mea (KMH)"
+                width={64}
+                height={64}
+                className="h-full w-full object-cover object-top"
+                priority
+              />
+            )}
           </div>
           <div className="flex items-center gap-1.5">
             <span className="font-mono text-amber-400 text-lg transition-transform duration-300 group-hover:-rotate-12">

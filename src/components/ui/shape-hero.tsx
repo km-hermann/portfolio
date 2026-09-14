@@ -12,6 +12,7 @@
 
 import { motion, type Variants } from "motion/react";
 import { Pacifico } from "next/font/google";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const pacifico = Pacifico({
@@ -95,11 +96,13 @@ export default function ShapeHero({
   title1 = "Hermann Mea (KMH)",
   title2 = "Software Engineer & Systems Builder",
   subtitle = "Architecting scalable web systems, event-driven backends, and bespoke digital experiences.",
+  profileImage,
   children,
 }: {
   title1?: string;
   title2?: string;
   subtitle?: string;
+  profileImage?: string;
   children?: React.ReactNode;
 }) {
   const fadeUpVariants: Variants = {
@@ -212,6 +215,30 @@ export default function ShapeHero({
 
       <div className="container relative z-10 mx-auto px-4 md:px-6 pt-16 pb-12">
         <div className="mx-auto max-w-4xl text-center">
+          <motion.div
+            animate="visible"
+            custom={0}
+            initial="hidden"
+            variants={fadeUpVariants}
+            className="flex justify-center mb-6"
+          >
+            {profileImage && (
+              <div
+                data-hero-photo
+                className="relative h-40 w-40 sm:h-44 sm:w-44 md:h-48 md:w-48 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-[0_0_30px_rgba(197,160,89,0.25)] ring-2 ring-indigo-500/40"
+              >
+                <Image
+                  src={profileImage}
+                  alt={title1}
+                  width={176}
+                  height={176}
+                  className="h-full w-full object-cover object-top"
+                  priority
+                />
+              </div>
+            )}
+          </motion.div>
+
           <motion.div
             animate="visible"
             custom={1}

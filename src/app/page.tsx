@@ -38,6 +38,7 @@ export default function Home() {
             title1="Hermann Mea"
             title2="Software Engineer & Systems Builder"
             subtitle="Architecting scalable web systems, event-driven backends, and bespoke digital experiences. Focused on predictable state, performance, and clean design."
+            profileImage="/profile.jpg"
           >
             <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
               <a

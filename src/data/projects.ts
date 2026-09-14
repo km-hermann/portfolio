@@ -40,7 +40,7 @@ export const projects: Project[] = [
     title: "Page237 Web Platform",
     subtitle: "Digital Ecosystem & Community Portal",
     description:
-      "Production web application engineered with Next.js, featuring high-performance dynamic routing, deep violet-gold aesthetics, and responsive architecture.",
+      "Production web application engineered with Next.js for selling of textbooks, pamphlets, and other educational materials, featuring high-performance dynamic routing, deep violet-gold aesthetics, and responsive architecture.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma"],
     image: "/projects/project-page237.png",
     liveUrl: "https://page237.vercel.app",

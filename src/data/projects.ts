@@ -45,7 +45,7 @@ export const projects: Project[] = [
     image: "/projects/project-page237.png",
     liveUrl: "https://page237.vercel.app",
     githubUrl: "https://github.com/km-hermann/page237",
-    status: "in-progress",
+    status: "live",
     featured: true,
     specs: [
       { label: "Architecture", value: "SSR / ISR" },
